@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roadmap | CodePath</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">Code<span>Path</span></a>
+      <div class="navbar__links">
+        <a href="index.html" class="navbar__link">Catalog</a>
+        <a href="my-timeline.html" class="navbar__link">My Timeline</a>
+      </div>
+      <div class="navbar__actions">
+        <a href="my-timeline.html" class="btn btn-pill">View Timeline</a>
+        <button class="navbar__mobile-toggle" id="mobile-toggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-menu__close" id="mobile-close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <a href="index.html" class="mobile-menu__link">Catalog</a>
+    <a href="my-timeline.html" class="mobile-menu__link">My Timeline</a>
+  </div>
+
+  <div class="container" id="content-wrap">
+    <!-- Populated by JS -->
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="navbar__logo">Code<span class="text-magenta">Path</span></div>
+      <p class="footer__text">&copy; 2026 CodePath. Built for Tap Academy students.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/roadmap.js"></script>
+</body>
+</html>

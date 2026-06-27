@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodePath | Curated Learning Roadmaps</title>
+  <meta name="description" content="Structured learning paths for CSE/IT students using the best free YouTube content.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">Code<span>Path</span></a>
+      <div class="navbar__links">
+        <a href="index.html" class="navbar__link active">Catalog</a>
+        <a href="my-timeline.html" class="navbar__link">My Timeline</a>
+      </div>
+      <div class="navbar__actions">
+        <div class="search-input">
+          <svg class="search-input__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          <input type="text" id="search-input" placeholder="Search roadmaps...">
+        </div>
+        <button class="navbar__mobile-toggle" id="mobile-toggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-menu__close" id="mobile-close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <a href="index.html" class="mobile-menu__link text-magenta">Catalog</a>
+    <a href="my-timeline.html" class="mobile-menu__link">My Timeline</a>
+  </div>
+
+  <header class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content animate-on-scroll">
+        <div class="hero__badge">Curated Learning</div>
+        <h1 class="hero__title">Master your<br><em>Craft</em></h1>
+        <p class="hero__subtitle">Structured learning paths for CSE/IT students. We've organized the chaos of YouTube into clear, step-by-step roadmaps from fundamentals to job-ready skills.</p>
+        <div class="hero__actions">
+          <a href="#catalog" class="btn btn-primary">Explore Roadmaps</a>
+          <a href="my-timeline.html" class="btn btn-ghost">View My Timeline</a>
+        </div>
+      </div>
+      <div class="hero__images animate-on-scroll">
+        <div class="hero__image"><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80" alt="Code"></div>
+        <div class="hero__image"><img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=600&q=80" alt="Python"></div>
+        <div class="hero__image" style="grid-column:1/-1;aspect-ratio:21/9"><img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=1000&q=80" alt="Web Dev"></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="catalog">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-header__eyebrow">The Catalog</div>
+        <h2 class="section-header__title">Learning Paths</h2>
+        <div class="category-pills" id="category-filters">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+      <div class="catalog-grid stagger-children" id="roadmap-grid">
+        <!-- Populated by JS -->
+      </div>
+      <div id="no-results" class="empty-state" style="display: none;">
+        <svg class="empty-state__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <h3 class="empty-state__title">No roadmaps found</h3>
+        <p class="empty-state__desc">Try adjusting your search or category filter.</p>
+        <button class="btn btn-ghost" onclick="resetFilters()">Clear Filters</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container features-section animate-on-scroll">
+      <div>
+        <div class="section-header">
+          <div class="section-header__eyebrow">Why CodePath</div>
+          <h2 class="section-header__title">Signal over<br>noise</h2>
+          <p class="section-header__desc">Stop searching for what to learn next. We've done the heavy lifting of curating and organizing the best free content into logical progressions.</p>
+        </div>
+      </div>
+      <div class="feature-rows" id="features-list">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="navbar__logo">Code<span class="text-magenta">Path</span></div>
+      <p class="footer__text">&copy; 2026 CodePath. Built for Tap Academy students.</p>
+      <div class="footer__links">
+        <a href="#" class="footer__link">GitHub</a>
+        <a href="#" class="footer__link">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Timeline | CodePath</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">Code<span>Path</span></a>
+      <div class="navbar__links">
+        <a href="index.html" class="navbar__link">Catalog</a>
+        <a href="my-timeline.html" class="navbar__link active">My Timeline</a>
+      </div>
+      <div class="navbar__actions">
+        <button class="navbar__mobile-toggle" id="mobile-toggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-menu__close" id="mobile-close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <a href="index.html" class="mobile-menu__link">Catalog</a>
+    <a href="my-timeline.html" class="mobile-menu__link text-magenta">My Timeline</a>
+  </div>
+
+  <div class="container" style="padding-top: 120px;">
+    <div class="section-header animate-on-scroll">
+      <div class="section-header__eyebrow">Your Path</div>
+      <h1 class="section-header__title">My Timeline</h1>
+      <p class="section-header__desc">Your personal learning schedule. Drag to reorder your roadmaps based on your current priorities.</p>
+    </div>
+
+    <div id="timeline-container" class="timeline stagger-children">
+      <!-- Populated by JS -->
+    </div>
+
+    <div id="empty-timeline" class="empty-state" style="display: none;">
+      <svg class="empty-state__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      <h3 class="empty-state__title">Timeline is empty</h3>
+      <p class="empty-state__desc">You haven't added any roadmaps to your timeline yet.</p>
+      <a href="index.html" class="btn btn-primary">Browse Catalog</a>
+    </div>
+
+    <div class="current-learning animate-on-scroll" id="current-learning" style="display: none;">
+      <div class="current-learning__header">
+        <h3 class="text-subheading">Current Focus</h3>
+        <div class="current-learning__badge">In Progress</div>
+      </div>
+      <div id="current-learning-content">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="navbar__logo">Code<span class="text-magenta">Path</span></div>
+      <p class="footer__text">&copy; 2026 CodePath. Built for Tap Academy students.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/timeline.js"></script>
+</body>
+</html>
